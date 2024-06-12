@@ -6,7 +6,10 @@ if minetest.global_exists("dreambuilder_theme") then
 	themename = dreambuilder_theme.name.."_"
 end
 
-local hotbar_selected_image = themename.."gui_hotbar_selected.png"
+--mcl_inventory_hotbar_selected.png
+--mcl_inventory_hotbar.png
+
+local hotbar_selected_image = "mcl_inventory_hotbar_selected.png"
 local hotbar_image = {}
 do
 	local hotbar_slot = themename.."gui_hb_bg_1.png"
@@ -17,7 +20,7 @@ do
 	end
 end
 
-local hotbar_size_default = 16
+local hotbar_size_default = 18
 
 local function validate_size(s)
 	local size = tonumber(s) or hotbar_size_default
